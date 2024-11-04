@@ -2,13 +2,19 @@
 
 namespace app\controllers;
 
+use app\core\BaseController;
 use app\core\View;
 
-class HomeController
+class HomeController extends BaseController
 {
+
     public function home()
     {
-        $view = new View();
-        echo $view->render("home");
+        echo $this->view->render("home", "main", null);
+    }
+
+    public function about()
+    {
+        echo $this->view->render("home", "main", null);
     }
 }
