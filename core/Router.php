@@ -31,6 +31,7 @@ class Router
             return call_user_func($callback);
         }
 
+        http_response_code(404);
         echo("NOT FOUND");
         exit;
     }

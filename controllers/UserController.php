@@ -9,6 +9,6 @@ class UserController
 
     public function readUser()
     {
-        return "User";
+        echo "Ognjen Ilic";
     }
 }
