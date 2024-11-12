@@ -9,8 +9,8 @@ class view
         $layout = $this->renderLayout($layoutName);
         $view = $this->renderPartialView($viewName,$params);
 
-        $fullView = str_replace("{{ RENDER_SECTION }}", $view, $layout);
-        return $fullView;
+        echo str_replace("{{ RENDER_SECTION }}", $view, $layout);
+
 
     }
 

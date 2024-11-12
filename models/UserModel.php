@@ -7,9 +7,11 @@ use app\core\DbConnection;
 
 class UserModel extends BaseModel
 {
+    public int $user_id;
+
     public string $email;
-    public string $firstName;
-    public string $lastName;
+    public string $first_name;
+    public string $last_name;
 
     public function __construct()
     {
@@ -20,5 +22,17 @@ class UserModel extends BaseModel
     {
         // TODO: Implement tableName() method.
         return 'users';
+    }
+
+    public function readColumns()
+    {
+        // TODO: Implement readColumns() method.
+        return ["user_id", "first_name", "last_name", "email"];
+    }
+
+    public function editColumns()
+    {
+        // TODO: Implement editColumns() method.
+        return ["first_name", "last_name", "email"];
     }
 }

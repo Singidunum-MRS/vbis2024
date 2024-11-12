@@ -7,7 +7,10 @@
 
 <div class="card">
     <div class="card-body">
-        <h1><?php echo $params->firstName ?> <?php echo $params->lastName ?></h1>
+        <h1><?php echo $params->first_name ?? "NOT FOUND" ?> <br>
+            <?php echo $params->last_name ?? "NOT FOUND" ?> <br>
+            <?php echo $params->email ?? "NOT FOUND" ?> <br>
+        </h1>
     </div>
 </div>
 
